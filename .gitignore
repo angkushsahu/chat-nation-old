@@ -1,0 +1,8 @@
+/node_modules
+/build
+/config.env
+/reference.txt
+
+/client/node_modules
+/client/build
+/client/reference.txt

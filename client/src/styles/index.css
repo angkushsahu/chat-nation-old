@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Poppins-SemiBold";
+	src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+	font-family: "Poppins-Regular";
+	src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+	font-family: "Josefin_Sans-Regular";
+	src: url("../assets/fonts/Josefin_Sans/JosefinSans-Regular.ttf");
+}
+@font-face {
+	font-family: "Josefin_Sans-SemiBold";
+	src: url("../assets/fonts/Josefin_Sans/JosefinSans-SemiBold.ttf");
+}
+
+@layer components {
+	*::selection {
+		@apply bg-secondary text-black;
+	}
+	body {
+		@apply text-base;
+	}
+	h1 {
+		@apply text-2xl sm:text-4xl font-semibold text-secondary font-js_semi;
+	}
+	h2 {
+		@apply text-xl sm:text-2xl text-secondary font-js_semi;
+	}
+	.description {
+		@apply text-base sm:text-lg font-p_regular;
+	}
+	input {
+		@apply font-p_regular;
+	}
+	.input_container {
+		@apply my-6;
+	}
+	.password_container {
+		@apply relative;
+	}
+	.password_container svg {
+		@apply absolute top-1/2 right-2 -translate-y-1/2;
+	}
+	.form_input {
+		@apply w-full p-2 rounded border-2 border-secondary bg-transparent outline-none text-base;
+	}
+	.form_button {
+		@apply bg-secondary text-primary font-bold rounded-md py-2 w-full my-4 transition-colors duration-300 border-[1px] border-secondary hover:bg-tertiary hover:border-tertiary outline-none;
+	}
+	.secondary_button {
+		@apply bg-transparent text-secondary font-bold rounded-md py-2 w-full my-4 transition-colors duration-300 border-[1px] border-secondary hover:bg-secondary hover:border-secondary hover:text-primary outline-none;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 0.2rem;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #ffffff39;
+	width: 0.1rem;
+	border-radius: 1rem;
+}
+
+.no_scrollbars {
+	scrollbar-width: none;
+}
+.no_scrollbars::-webkit-scrollbar {
+	width: 0rem;
+}
+
+form > aside.emoji-picker-react {
+	position: absolute;
+	top: -350px;
+	left: 50px;
+	right: 0;
+	bottom: 0;
+	background-color: #131324;
+	box-shadow: 0 5px 10px #381694;
+	border-color: #381694;
+}
+@media screen and (max-width: 500px) {
+	form > aside.emoji-picker-react {
+		left: 10px;
+	}
+}
+.emoji-scroll-wrapper::-webkit-scrollbar {
+	background-color: #131324;
+	width: 5px;
+}
+.emoji-categories > button {
+	filter: contrast(0);
+}
+.emoji-search {
+	background-color: transparent;
+	border-color: #381694;
+}
+.emoji-picker-react .emoji-scroll-wrapper > .emoji-group:before {
+	background: transparent;
+}
