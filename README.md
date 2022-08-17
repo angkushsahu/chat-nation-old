@@ -1,4 +1,4 @@
-# Chat Nation Server
+# Chat Nation
 
 Now stay connected to your loved ones with this real-time messaging application. This website offers fast message delivery and response. Add people to your friend list and stay connected with them.
 
@@ -10,7 +10,7 @@ You can also create groups and add people you like. You can further update the g
 
 Typescript - React - Tailwindcss - Node - Express - MongoDB - Heroku
 
-### Visit :- [Chat-Nation](https://chat-nation.netlify.app/)
+### Visit :- [Chat-Nation](https://chat-nation.herokuapp.com/)
 
 ![Chat Nation](https://res.cloudinary.com/dvhucdquc/image/upload/v1660402110/ProjectsHomeImages/chat-nation_uzodci.png)
 
