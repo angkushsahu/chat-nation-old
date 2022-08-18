@@ -18,12 +18,11 @@ app.use("/api/chat", chatRoutes);
 
 // --------------- DEPLOYMENT ---------------
 
-import { join, resolve } from "path";
-const clientDirectory = resolve();
+import { join } from "path";
 if (process.env.NODE_ENV === "production") {
-	app.use(express.static(join(clientDirectory, "/client/build", "index.html")));
+	app.use(express.static("client/build"));
 	app.get("*", (req: Request, res: Response) => {
-		res.status(200).sendFile(resolve(clientDirectory, "client", "build", "index.html"));
+		res.status(200).sendFile(join(__dirname, "../client", "build", "index.html"));
 	});
 } else {
 	app.get("/", (req: Request, res: Response, next: NextFunction) => {

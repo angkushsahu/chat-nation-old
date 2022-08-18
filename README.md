@@ -24,6 +24,15 @@ After you get your copy, hit the command below to install all the dependencies t
 npm install
 ```
 
+After the command above has finished installing all the dependencies, hit the following commands
+
+```bash
+cd client/
+npm install
+```
+
+Now you can successfully run the project locally
+
 ## About the Developer
 
 ### Hey, this is Angkush
